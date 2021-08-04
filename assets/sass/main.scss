@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+
+
+
+
+@import 'layout/main';
+@import 'layout/footer';
+@import 'layout/navigation';
+

@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+html {
+    font-size: 62.5%;
+}
+*/
+h1.heroSection__info-text-h1 {
+  color: #0C0910;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+p {
+  color: #0C0910;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+h1.heroSection__info-footer-h1 {
+  color: #FFF;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h2.heroSection__info-footer-h2 {
+  color: #FFF;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.heroSection__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .heroSection__info {
+    width: 100%;
+  }
+}
+@media (min-width: 1025px) {
+  .heroSection__info {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .heroSection__info-text {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    height: 70%;
+  }
+
+  .heroSection__info-button {
+    background-color: #FFF;
+    border: 2px solid #0C0910;
+    color: #0C0910;
+    width: 112px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    /*
+    @media (min-width: 769px){
+        width: 144px;
+        padding: 8px;
+    }*/
+  }
+  .heroSection__info-button:hover {
+    color: #0C0910;
+    border: 2px solid #D1D1D1;
+  }
+  .heroSection__info-button:focus {
+    color: #D1D1D1;
+    border: 2px solid #D1D1D1;
+  }
+}
+@media (min-width: 769px) {
+  .heroSection__info-text {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    height: 70%;
+  }
+
+  .heroSection__info-button {
+    background-color: #FFF;
+    border: 2px solid #0C0910;
+    color: #0C0910;
+    width: 144px;
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .heroSection__info-button:hover {
+    color: #0C0910;
+    border: 2px solid #D1D1D1;
+  }
+  .heroSection__info-button:focus {
+    color: #D1D1D1;
+    border: 2px solid #D1D1D1;
+  }
+}
+.heroSection__guy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .heroSection__guy {
+    width: 100%;
+  }
+}
+@media (min-width: 1025px) {
+  .heroSection__guy {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .heroSection__guy-pic {
+    width: 100%;
+    height: 50vh;
+    object-position: top;
+    object-fit: cover;
+  }
+}
+@media (max-width: 424px) {
+  .heroSection__guy-pic {
+    height: 25vh;
+  }
+}
+@media (min-width: 769px) {
+  .heroSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .heroSection__guy-pic {
+    width: 100%;
+  }
+}
+.heroSection__info-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+}
+
+@media (max-width: 768px) {
+  .heroSection__info-footer-sus-h1 {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-size: 30px;
+    transform: rotate(-270deg) translateX(60%);
+  }
+}
+@media (min-width: 769px) {
+  .heroSection__info-footer-sus-h1 {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-size: 3vh;
+    transform: rotate(-270deg);
+  }
+}
+.heroSection__info-footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #0C0910;
+  width: 90%;
+  height: 100%;
+  padding: 3rem;
+}
+
+.heroSection__info-footer-form {
+  width: 50%;
+  min-width: 192px;
+}
+
+.heroSection__info-footer-sus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 10%;
+  height: 100%;
+}
+
+#navbar {
+  padding-top: 0rem;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #0C0910;
+  color: #FFF !important;
+  font-family: "Old Standard TT", serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+}
+
+.navbar-logo {
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+}
+.navbar-logo:hover {
+  color: #ECECEC;
+}
+
+.nav-link {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0C0910 !important;
+  padding-right: 5rem !important;
+}
+
+/*# sourceMappingURL=style.css.map */

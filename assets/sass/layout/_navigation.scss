@@ -1,0 +1,38 @@
+#navbar{
+    
+    padding-top: 0rem;
+    
+}
+
+#logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: $smoky-black;
+    color: $white!important;
+    font-family: $old-standard!important;
+    font-weight: $regular!important;
+    font-size: $medium!important;
+    
+}
+.navbar-logo{
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+    &:hover{
+        color: $isabelline;
+    }
+}
+
+.nav-link{
+    font-family: $raleway;
+    font-size: $medium;
+    font-weight: $bold;
+    color: $smoky-black!important;
+    padding-right: 5rem!important;
+    
+}
+
+
