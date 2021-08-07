@@ -177,7 +177,7 @@ h2.heroSection__info-footer-h2 {
   .heroSection__info-footer-sus-h1 {
     font-family: "Old Standard TT", serif;
     font-weight: 700;
-    font-size: 3vh;
+    font-size: 2rem;
     transform: rotate(-270deg);
   }
 }
@@ -207,30 +207,44 @@ h2.heroSection__info-footer-h2 {
   height: 100%;
 }
 
-#navbar {
-  padding-top: 0rem;
-}
-
-#logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3.5rem;
-  width: 3.5rem;
+.navbar__logo-box {
+  position: absolute;
   background-color: #0C0910;
-  color: #FFF !important;
-  font-family: "Old Standard TT", serif !important;
-  font-weight: 400 !important;
-  font-size: 16px !important;
+  height: 72px;
+  width: 72px;
+  z-index: -1;
 }
 
-.navbar-logo {
-  text-align: center;
-  text-decoration: none;
-  color: #FFF;
+@media (width: 768px) {
+  .navbar {
+    padding: 0.7rem !important;
+  }
 }
-.navbar-logo:hover {
-  color: #ECECEC;
+
+.navbar__logo-text {
+  display: inline-block;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFF !important;
+  z-index: 1;
+}
+.navbar__logo-text:hover {
+  color: #ECECEC !important;
+}
+.navbar__logo-text:focus {
+  color: #ECECEC !important;
+}
+@media (max-width: 768px) {
+  .navbar__logo-text {
+    transform: translateX(-15%);
+  }
+}
+@media (min-width: 1024px) {
+  .navbar__logo-text {
+    transform: rotate(270deg);
+  }
 }
 
 .nav-link {
